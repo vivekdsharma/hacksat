@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sports.css">
+  <title>Sports and Exercises</title>
+</head>
+<body>
+  <header> <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo"/>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="nutrient.html">nutrition</a></li>
+      <li><a href="sports.html">sports</a></li>
+      <li><a href="exercise.html">exercise</a></li>
+      <li><a href="quiz.html">quiz</a></li>
+      <li><a href="merch.html">shop now</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </nav></header>
+  <h1>Sports and Exercises</h1>
+
+  <label for="sportsDropdown">Choose a Sport:</label>
+  <select id="sportsDropdown">
+    <option value="">--Select a Sport--</option>
+  </select>
+
+  <div id="details" class="hidden">
+    <h2 id="sportName"></h2>
+    <img id="sportImage" src="" alt="" />
+    <h3>Rules and Regulations:</h3>
+    <ul id="rulesList"></ul>
+    <h3>Common Injuries:</h3>
+    <ul id="injuriesList"></ul>
+    <h3>Famous Tournaments:</h3>
+    <ul id="tournamentsList"></ul>
+    <h3>Exercises:</h3>
+    <ul id="exercisesList"></ul>
+  </div>
+
+  <!-- Exercise Timer Section -->
+  <div id="exercise-display" class="hidden">
+    <h2 id="exercise-name"></h2>
+    <div id="exercise-animation"></div>
+    <p>Timer: <span id="timer">00:30</span></p>
+    <p>Set: <span id="current-set">1</span> / 3</p>
+    <div id="controls">
+      <button id="start-button" onclick="startWorkout()">Start</button>
+      <button onclick="resetWorkout()">Reset</button>
+    </div>
+    <div id="timer-tracker" class="hidden">
+      <p id="feedback-text">Ready?</p>
+      <p id="motivational-quote"></p>
+    </div>
+  </div>
+
+  <script>
+    let allExercises = [];  // This will hold all the exercises fetched from the API
+    let currentExercise = '';
+    let currentSet = 1;
+    let timeLeft = 30;
+    let timer;
+    let totalSets = 3;
+
+    // Load sports JSON and exercises API
+    async function loadSportsAndExercises() {
+      try {
+        // Fetch sports JSON (replace 'test.json' with actual path)
+        const sportsResponse = await fetch('test.json');
+        const sportsData = await sportsResponse.json();
+
+        // Populate dropdown
+        populateDropdown(sportsData);
+      } catch (error) {
+        console.error('Error loading data:', error);
+      }
+    }
+
+    // Populate dropdown with sports
+    function populateDropdown(sportsData) {
+      const sportsDropdown = document.getElementById('sportsDropdown');
+      for (const sportKey in sportsData) {
+        const option = document.createElement('option');
+        option.value = sportKey;
+        option.textContent = sportsData[sportKey].name;
+        sportsDropdown.appendChild(option);
+      }
+
+      // Display sport details on selection
+      sportsDropdown.addEventListener('change', function () {
+        const selectedSport = this.value;
+        if (selectedSport) {
+          displayDetails(sportsData[selectedSport], sportsData);
+        }
+      });
+    }
+
+    // Display sport and exercises details
+    function displayDetails(sportData, allSportsData) {
+      document.getElementById('details').classList.remove('hidden');
+      document.getElementById('sportName').textContent = sportData.name;
+      document.getElementById('sportImage').src = sportData.photo_url;
+
+      // Rules
+      const rulesList = document.getElementById('rulesList');
+      rulesList.innerHTML = '';
+      sportData.rules_and_regulations.forEach((rule) => {
+        const li = document.createElement('li');
+        li.textContent = rule;
+        rulesList.appendChild(li);
+      });
+
+      // Injuries
+      const injuriesList = document.getElementById('injuriesList');
+      injuriesList.innerHTML = '';
+      sportData.common_injuries.forEach((injury) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${injury.name}</strong>: ${injury.symptoms}. <em>Precautions:</em> ${injury.precautions}`;
+        injuriesList.appendChild(li);
+      });
+
+      // Tournaments
+      const tournamentsList = document.getElementById('tournamentsList');
+      tournamentsList.innerHTML = '';
+      sportData.famous_tournaments.forEach((tournament) => {
+        const li = document.createElement('li');
+        li.textContent = tournament;
+        tournamentsList.appendChild(li);
+      });
+
+      // Exercises - Display a random exercise from the list
+      displayRandomExercise(sportData);
+    }
+
+    // Display a random exercise
+    function displayRandomExercise(sportData) {
+      const randomIndex = Math.floor(Math.random() * sportData.exercises.length);
+      const randomExercise = sportData.exercises[randomIndex];
+
+      const exercisesList = document.getElementById('exercisesList');
+      exercisesList.innerHTML = '';  // Clear any existing exercises
+
+      // Create the HTML for the random exercise
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <p><strong>${randomExercise.name}</strong></p>
+        <p>${randomExercise.description}</p>`
+      
+      exercisesList.appendChild(li);
+    }
+
+    // Load data on page load
+    loadSportsAndExercises();
+  </script>
+</body>
+</html>

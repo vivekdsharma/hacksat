@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(bgimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: whitesmoke;
+}
+header {
+    width: 95%;
+    background-color: transparent;
+    /* padding: 10px 20px; */
+    position: fixed;
+    top: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .navbar .logo img {
+    width: 70px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #f1c40f; /* Highlight on hover */
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      flex-direction: column;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+
+@media (max-width: 768px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.middle{
+    margin-top: 10.5%;
+}
+
+.midtop {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    margin: 20px;
+}
+
+.mtl {
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mtl h1 {
+    font-size: 40px;
+}
+
+
+
+
+.faq-container {
+    width: 80%;
+    max-width: 600px;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 15px;
+    /* border: 1px solid #ddd; */
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+
+}
+
+.faq-answer {
+    display: none; /* Hidden by default */
+    padding: 15px;
+    /* border: 1px solid #ddd; */
+    border-top: none;
+}

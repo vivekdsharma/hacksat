@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nutrient.css">
+  <title>Nutrient-Based Recipe Finder</title>
+</head>
+<body>
+
+  <header> <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo"/>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="nutrient.html">nutrition</a></li>
+      <li><a href="sports.html">sports</a></li>
+      <li><a href="exercise.html">exercise</a></li>
+      <li><a href="quiz.html">quiz</a></li>
+      <li><a href="merch.html">shop now</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </nav></header>
+
+  <div class="container">
+    <h2>Nutrient-Based Recipe Finder</h2>
+    <label for="calories">Calories (e.g., 500):</label>
+    <input type="number" id="calories" placeholder="Enter desired calories">
+    
+    <label for="protein">Protein (g):</label>
+    <input type="number" id="protein" placeholder="Enter desired protein">
+
+    <label for="fat">Fat (g):</label>
+    <input type="number" id="fat" placeholder="Enter desired fat">
+
+    <label for="carbs">Carbs (g):</label>
+    <input type="number" id="carbs" placeholder="Enter desired carbs">
+    
+    <button onclick="findDish()">Find Dish</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    async function findDish() {
+        const apiKey = "817212e0ff4b4b86b5f69a81bb7f35c6"; // Replace with your actual API key
+        const calories = document.getElementById("calories").value || 0;
+const protein = document.getElementById("protein").value || 0;
+const fat = document.getElementById("fat").value || 0;
+const carbs = document.getElementById("carbs").value || 0;
+
+// Relaxed ranges
+const calorieRange = 100; // +/- 100 calories
+const proteinRange = 10;  // +/- 10g protein
+const fatRange = 10;      // +/- 10g fat
+const carbRange = 20;     // +/- 20g carbs
+
+const url = `https://api.spoonacular.com/recipes/findByNutrients?minCalories=${Math.max(calories - calorieRange, 0)}&maxCalories=${+calories + calorieRange}&minProtein=${Math.max(protein - proteinRange, 0)}&maxProtein=${+protein + proteinRange}&minFat=${Math.max(fat - fatRange, 0)}&maxFat=${+fat + fatRange}&minCarbs=${Math.max(carbs - carbRange, 0)}&maxCarbs=${+carbs + carbRange}&apiKey=${apiKey}`;
+
+try {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP Error: ${response.status}`);
+  }
+
+  const recipes = await response.json();
+  if (recipes.length === 0) {
+    document.getElementById("result").innerHTML = "<p>No exact matches found. Try relaxing your input constraints.</p>";
+    fetchClosestRecipes(); // Optional: Implement relaxed search as before
+  } else {
+    displayRecipes(recipes);
+  }
+} catch (error) {
+  console.error("Error fetching recipes:", error);
+  document.getElementById("result").innerHTML = `<p>Error fetching recipes: ${error.message}. Please try again later.</p>`;
+}
+
+// Function to display recipes with detailed information
+async function displayRecipes(recipes) {
+  let output = "<h3>Recommended Dishes:</h3>";
+  
+  for (let recipe of recipes) {
+    const recipeDetails = await fetchRecipeDetails(recipe.id);
+    if (recipeDetails) {
+      output += `
+        <div>
+          <h4>${recipeDetails.title}</h4>
+          <img src="${recipeDetails.image}" alt="${recipeDetails.title}" style="width: 300px; height: auto;">
+          <h5>Ingredients:</h5>
+          <ul>
+            ${recipeDetails.extendedIngredients.map(ingredient => `<li>${ingredient.original}</li>`).join('')}
+          </ul>
+          <h5>Instructions:</h5>
+          <ol>
+            ${recipeDetails.analyzedInstructions.length > 0 
+              ? recipeDetails.analyzedInstructions[0].steps.map(step => `<li>${step.step}</li>`).join('') 
+              : "<li>No instructions available</li>"
+            }
+          </ol>
+        </div>
+        <hr>`;
+    }
+  }
+  
+  document.getElementById("result").innerHTML = output;
+}
+
+// Function to fetch detailed recipe information
+async function fetchRecipeDetails(recipeId) {
+  const detailsUrl = `https://api.spoonacular.com/recipes/${recipeId}/information?includeNutrition=false&apiKey=${apiKey}`;
+  try {
+    const response = await fetch(detailsUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP Error: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(`Error fetching details for recipe ID ${recipeId}:`, error);
+    return null;
+  }
+}
+
+
+
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Fitness Buddy</title>
+  <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+  <header> <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo"/>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="nutrient.html">nutrition</a></li>
+      <li><a href="sports.html">sports</a></li>
+      <li><a href="exercise.html">exercise</a></li>
+      <li><a href="quiz.html">quiz</a></li>
+      <li><a href="merch.html">shop now</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </nav></header>
+  <div class="main">
+  <div id="exheading">
+    <h1>Virtual Fitness Buddy</h1>
+    <p>Your personalized workout companion!</p>
+  </div>
+  <main>
+    <!-- Dropdown for selecting exercises -->
+    <section id="exercise-selector" class="position">
+      <label for="exercise-dropdown">Choose an exercise:</label>
+      <select id="exercise-dropdown">
+        <option value="" selected disabled>Select an exercise</option>
+      </select>
+    </section>
+
+    <!-- Main Content -->
+    <div class="Maincontent">
+      <section id="exercise-display" class="hidden">
+        <div id="exercise-animation"></div>
+        <p id="exercise-name"></p>
+      </section>
+      <section>
+        <div id="controls" class="hidden position">
+          <button class="timerbuttons" id="start-button" onclick="startWorkout()">Start</button>
+          <button class="timerbuttons" onclick="stopWorkout()">Stop</button>
+          <button class="timerbuttons" onclick="resetWorkout()">Reset</button>
+        </div>
+        <section id="timer-tracker" class="hidden position">
+          <h2>Timer: <span id="timer">00:30</span></h2>
+          <p>Set: <span id="current-set">1</span> / <span id="total-sets">3</span></p>
+          <p id="feedback-text" class="feedback-text">Ready?</p>
+          <p id="motivational-quote" class="quote-text"></p>
+        </section>
+      </section>
+    </div>
+  </main>
+
+</div>
+  <script src="exercise.js"></script>
+</body>
+</html>

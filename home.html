@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main">
+        <header> <nav class="navbar">
+            <div class="logo">
+              <img src="logo.png" alt="Logo"/>
+            </div>
+            <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="nutrient.html">nutrition</a></li>
+              <li><a href="sports.html">sports</a></li>
+              <li><a href="exercise.html">exercise</a></li>
+              <li><a href="quiz.html">quiz</a></li>
+              <li><a href="merch.html">shop now</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+              &#9776;
+            </div>
+          </nav></header>
+    <div class="middle">
+
+        <div class="midtop">
+            <div class="mtl">
+                <h1>About Us</h1>
+                <p class="mtlp">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium doloribus dolore maiores necessitatibus, dolor nemo, autem commodi reiciendis sit, optio officia facere at quia quisquam dicta! Quos deleniti natus enim minus laboriosam fuga dicta quis quam perspiciatis fugiat ipsa, distinctio possimus fugit reiciendis est incidunt repellat iure nihil. Dolore.
+                </p>
+            </div>
+        </div>
+
+        <div class="midmid">
+            
+            <h1>Page Description</h1>
+            <!-- <p class="desc" id="desfirst">Calender</p>
+            <p class="desc" id="dessecond">Nutrition Tracker</p>
+            <p class="desc" id="desthird">Exercise</p>
+            <p class="desc" id="desfourth">Quiz</p>
+            <p class="desc" id="desfifth">Merchandise</p> -->
+
+
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Calender</div>
+                    <div class="faq-answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis sunt, magni nesciunt quas deleniti tempore quia vitae placeat hic cumque!</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Nutrition</div>
+                    <div class="faq-answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis recusandae animi, voluptatibus architecto voluptatum fuga dolor minima placeat consectetur dolorem.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Exercise</div>
+                    <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam assumenda numquam recusandae nihil repudiandae pariatur necessitatibus repellat nemo voluptatem aperiam?</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Quiz</div>
+                    <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam assumenda numquam recusandae nihil repudiandae pariatur necessitatibus repellat nemo voluptatem aperiam?</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Merchandise</div>
+                    <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam assumenda numquam recusandae nihil repudiandae pariatur necessitatibus repellat nemo voluptatem aperiam?</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer></footer>
+</div>
+
+
+
+
+<script>
+    // JavaScript to toggle the answer visibility
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            // Toggle visibility of the answer
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+</script>    
+</body>
+</html>

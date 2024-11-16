@@ -1,0 +1,219 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+
+    background-image: url(bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+  }
+  header {
+    width: 95%;
+    background-color: transparent;
+    /* padding: 10px 20px; */
+    position: fixed;
+    top: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .navbar .logo img {
+    width: 70px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #f1c40f; /* Highlight on hover */
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      flex-direction: column;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-top: 20px;
+  }
+
+  label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  select {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    /* background-color: #fff; */
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #45a049;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #details {
+    margin-top: 40px;
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #sportName {
+    font-size: 2em;
+    color: #333;
+  }
+
+  #sportImage {
+    width: 30%; /* Adjust this value to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 70%;
+  }
+
+  h3 {
+    margin-top: 20px;
+    color: #4CAF50;
+    font-size: 1.5em;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  li strong {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+
+  #exercise-display {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #exercise-name {
+    font-size: 2em;
+    color: #333;
+  }
+
+  #exercise-animation {
+    max-width: 200px;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  #timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FF6347;
+  }
+
+  #controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  #timer-tracker {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #feedback-text {
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  #motivational-quote {
+    font-style: italic;
+    color: #808080;
+  }

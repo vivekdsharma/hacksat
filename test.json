@@ -1,0 +1,486 @@
+{
+  "football": {
+    "name": "Football",
+    "rules_and_regulations": [
+      "The game is played with 11 players per team on a rectangular field.",
+      "The objective is to score goals by getting the ball into the opponent's net.",
+      "Matches are played in two halves of 45 minutes each, with a 15-minute halftime break.",
+      "Players (except goalkeepers) cannot touch the ball with their hands.",
+      "A match is officiated by a referee and two assistant referees."
+    ],
+    "common_injuries": [
+      {
+        "name": "Ankle Sprain",
+        "symptoms": "Swelling, pain, difficulty walking",
+        "causes": "Twisting or rolling the ankle during play",
+        "precautions": "Wear proper footwear, ankle support, and warm up properly."
+      },
+      {
+        "name": "Hamstring Strain",
+        "symptoms": "Pain, tightness, swelling in the back of the thigh",
+        "causes": "Sudden sprinting or kicking",
+        "precautions": "Regular stretching, strength training, and proper warm-up."
+      }
+    ],
+    "famous_tournaments": [
+      "FIFA World Cup",
+      "UEFA Champions League",
+      "Copa America",
+      "English Premier League",
+      "La Liga"
+    ],
+    "exercises": [
+      {
+        "name": "Agility Ladder Drills",
+        "description": "A series of footwork drills using a ladder to improve agility and coordination.",
+        "gif_url": "https://example.com/football-agility-ladder.gif"
+      },
+      {
+        "name": "Passing Drills",
+        "description": "Practices short and long passes with partners or a wall to improve passing accuracy.",
+        "gif_url": "https://example.com/football-passing-drill.gif"
+      }
+    ],
+    "photo_url": "images/football.png"
+  },
+  "cricket": {
+    "name": "Cricket",
+    "rules_and_regulations": [
+      "Each team has 11 players, and the match is played on an oval field with a rectangular 22-yard pitch.",
+      "The game consists of batting and bowling phases.",
+      "Runs are scored by hitting the ball and running between the wickets or hitting boundaries.",
+      "The bowler must deliver the ball with a straight arm.",
+      "A match can last 20 overs (T20), 50 overs (ODI), or 5 days (Test match)."
+    ],
+    "common_injuries": [
+      {
+        "name": "Finger Injuries",
+        "symptoms": "Pain, swelling, difficulty in movement",
+        "causes": "Impact from the ball while fielding or catching",
+        "precautions": "Wear protective gloves, practice safe catching techniques."
+      },
+      {
+        "name": "Shoulder Injuries",
+        "symptoms": "Pain, reduced mobility",
+        "causes": "Overuse during bowling or throwing",
+        "precautions": "Regular strengthening exercises, proper technique."
+      }
+    ],
+    "famous_tournaments": [
+      "ICC Cricket World Cup",
+      "Indian Premier League (IPL)",
+      "Ashes Series",
+      "ICC T20 World Cup",
+      "Champions Trophy"
+    ],
+    "exercises": [
+      {
+        "name": "Batting Footwork Drills",
+        "description": "Improves batting stance, balance, and footwork for better shot precision.",
+        "gif_url": "https://example.com/cricket-batting-footwork.gif"
+      },
+      {
+        "name": "Bowling Accuracy Drill",
+        "description": "Uses target markers to help bowlers practice precision in line and length.",
+        "gif_url": "https://example.com/cricket-bowling-accuracy.gif"
+      }
+    ],
+    "photo_url": "images/cricket.png"
+  },
+  "basketball": {
+    "name": "Basketball",
+    "rules_and_regulations": [
+      "Each team consists of 5 players on the court.",
+      "The game is played in four quarters of 10 or 12 minutes each.",
+      "The objective is to score points by shooting the ball into the opponent's hoop.",
+      "Players cannot take more than two steps without dribbling the ball.",
+      "Fouls include hitting, pushing, and obstructing an opponent."
+    ],
+    "common_injuries": [
+      {
+        "name": "Ankle Sprain",
+        "symptoms": "Swelling, pain, difficulty walking",
+        "causes": "Jumping or landing awkwardly",
+        "precautions": "Wear supportive shoes, strengthen ankle muscles, warm-up."
+      },
+      {
+        "name": "Knee Injuries",
+        "symptoms": "Pain, instability, swelling",
+        "causes": "Sudden changes in direction, collisions",
+        "precautions": "Knee braces, proper training, avoid overuse."
+      }
+    ],
+    "famous_tournaments": [
+      "NBA",
+      "FIBA Basketball World Cup",
+      "EuroLeague",
+      "Olympic Basketball",
+      "NCAA Basketball Championship"
+    ],
+    "exercises": [
+      {
+        "name": "Dribbling Drills",
+        "description": "Enhances ball control using various dribbling patterns and speeds.",
+        "gif_url": "https://example.com/basketball-dribbling.gif"
+      },
+      {
+        "name": "Shooting Drill",
+        "description": "Practices shooting from different spots on the court to build accuracy.",
+        "gif_url": "https://example.com/basketball-shooting.gif"
+      }
+    ],
+    "photo_url": "images/basketball.png"
+  },
+  "tennis": {
+    "name": "Tennis",
+    "rules_and_regulations": [
+      "The game is played on a rectangular court divided by a net.",
+      "Players score points by hitting the ball into the opponent's court.",
+      "Matches are played in sets; a player needs to win 6 games to win a set.",
+      "Players serve alternately after each game.",
+      "The ball must be hit within the bounds of the court."
+    ],
+    "common_injuries": [
+      {
+        "name": "Tennis Elbow",
+        "symptoms": "Pain on the outer elbow, weakness in the arm",
+        "causes": "Overuse of forearm muscles",
+        "precautions": "Proper technique, rest, use of elbow braces."
+      },
+      {
+        "name": "Shoulder Injuries",
+        "symptoms": "Pain, limited mobility",
+        "causes": "Repetitive serving motions",
+        "precautions": "Shoulder strengthening exercises, proper warm-up."
+      }
+    ],
+    "famous_tournaments": [
+      "Wimbledon",
+      "US Open",
+      "French Open",
+      "Australian Open",
+      "Davis Cup"
+    ],
+    "exercises": [
+      {
+        "name": "Forehand and Backhand Drill",
+        "description": "Works on the accuracy and power of forehand and backhand shots.",
+        "gif_url": "https://example.com/tennis-forehand-backhand.gif"
+      },
+      {
+        "name": "Footwork Ladder Drill",
+        "description": "Improves lateral movement and quick footwork across the court.",
+        "gif_url": "https://example.com/tennis-footwork-ladder.gif"
+      }
+    ],
+    "photo_url": "images/tennis.png"
+  },
+  "hockey": {
+    "name": "Hockey",
+    "rules_and_regulations": [
+      "The game is played with 11 players per team on a rectangular field.",
+      "Players can only use the flat side of the stick to hit the ball.",
+      "The objective is to score goals by hitting the ball into the opponent’s net.",
+      "Matches are played in four quarters of 15 minutes each.",
+      "Physical contact, tripping, and hitting opponents are not allowed."
+    ],
+    "common_injuries": [
+      {
+        "name": "Concussion",
+        "symptoms": "Headache, dizziness, confusion",
+        "causes": "Impact with the ball or stick",
+        "precautions": "Wear helmets, follow safety rules."
+      },
+      {
+        "name": "Knee Ligament Injuries",
+        "symptoms": "Pain, swelling, instability",
+        "causes": "Twisting or collisions",
+        "precautions": "Wear knee braces, strengthen leg muscles."
+      }
+    ],
+    "famous_tournaments": [
+      "Hockey World Cup",
+      "Olympic Hockey",
+      "Champions Trophy",
+      "FIH Pro League",
+      "Asian Games Hockey"
+    ],
+    "exercises": [
+      {
+        "name": "Puck Handling Drills",
+        "description": "Focuses on stick control and puck handling in different directions.",
+        "gif_url": "https://example.com/hockey-puck-handling.gif"
+      },
+      {
+        "name": "Shooting Practice",
+        "description": "Practices shooting accuracy and power from various angles on the goal.",
+        "gif_url": "https://example.com/hockey-shooting-practice.gif"
+      }
+    ],
+    "photo_url": "images/hockey.png"
+  },
+  "volleyball": {
+    "name": "Volleyball",
+    "rules_and_regulations": [
+      "The game is played on a rectangular court with a net in the center.",
+      "Each team has 6 players on the court.",
+      "Players score points by hitting the ball into the opponent's court.",
+      "A team can touch the ball up to three times before sending it over the net.",
+      "A match is played to the best of 5 sets; each set is played to 25 points."
+    ],
+    "common_injuries": [
+      {
+        "name": "Finger Dislocations",
+        "symptoms": "Pain, swelling, deformity",
+        "causes": "Impact with the ball",
+        "precautions": "Wear finger supports, practice safe techniques."
+      },
+      {
+        "name": "Shoulder Tendinitis",
+        "symptoms": "Pain, limited movement",
+        "causes": "Repetitive overhead motions",
+        "precautions": "Strengthening exercises, rest."
+      }
+    ],
+    "famous_tournaments": [
+      "FIVB Volleyball World Cup",
+      "Olympic Volleyball",
+      "Asian Volleyball Championship",
+      "NCAA Volleyball Championship",
+      "European Volleyball Championship"
+    ],
+    "exercises": [
+      {
+        "name": "Passing Drill",
+        "description": "Enhances accuracy in bump passes to teammates.",
+        "gif_url": "https://tenor.com/view/volleyball-passing-drill.gif"
+      },
+      {
+        "name": "Blocking Drill",
+        "description": "Trains reaction speed and timing for successful blocks at the net.",
+        "gif_url": "https://tenor.com/view/volleyball-blocking-drill.gif"
+      }
+    ],
+    "photo_url": "images/volleyball.png"
+
+  },
+  
+    "rugby": {
+      "name": "Rugby",
+      "rules_and_regulations": [
+        "The game is played with 15 players per team on a rectangular field.",
+        "Points are scored by grounding the ball in the opponent's in-goal area (try) or kicking it through the goalposts.",
+        "The game lasts 80 minutes, divided into two 40-minute halves.",
+        "Players can only pass the ball backward or laterally.",
+        "Physical tackles are allowed, but high tackles or dangerous play is prohibited."
+      ],
+      "common_injuries": [
+        {
+          "name": "Concussions",
+          "symptoms": "Headache, dizziness, confusion",
+          "causes": "Collisions and tackles",
+          "precautions": "Wear protective headgear, follow tackling protocols."
+        },
+        {
+          "name": "Shoulder Dislocation",
+          "symptoms": "Pain, deformity, limited movement",
+          "causes": "Impact during tackles or falls",
+          "precautions": "Strengthen shoulder muscles, proper tackling technique."
+        }
+      ],
+      "famous_tournaments": [
+        "Rugby World Cup",
+        "Six Nations Championship",
+        "The Rugby Championship",
+        "Super Rugby",
+        "British and Irish Lions Tour"
+      ],
+      "exercises": [
+        {
+          "name": "Tackle Practice",
+          "description": "Improves tackling form and reduces injury risk during play.",
+          "gif_url": "https://tenor.com/view/rugby-tackle-practice.gif"
+        },
+        {
+          "name": "Passing Drill",
+          "description": "Develops teamwork and passing accuracy in motion.",
+          "gif_url": "https://tenor.com/view/rugby-passing-drill.gif"
+        }
+      ],
+      "photo_url": "images/rugby.png"
+    },
+    "golf": {
+      "name": "Golf",
+      "rules_and_regulations": [
+        "The game is played on a large outdoor course with 18 holes.",
+        "Players use a set of clubs to hit a ball into each hole in the fewest strokes possible.",
+        "Each hole has a par score, indicating the ideal number of strokes to complete it.",
+        "Players take turns hitting the ball from the location where it landed.",
+        "The player with the lowest total score at the end wins."
+      ],
+      "common_injuries": [
+        {
+          "name": "Lower Back Pain",
+          "symptoms": "Stiffness, pain, difficulty bending",
+          "causes": "Repetitive swinging motion",
+          "precautions": "Strengthen core muscles, proper swing technique."
+        },
+        {
+          "name": "Elbow Tendinitis",
+          "symptoms": "Pain in the elbow, weakness in grip",
+          "causes": "Overuse or improper technique",
+          "precautions": "Use correct grip, stretch before play."
+        }
+      ],
+      "famous_tournaments": [
+        "The Masters",
+        "The Open Championship",
+        "U.S. Open",
+        "PGA Championship",
+        "Ryder Cup"
+      ],
+      "exercises": [
+      {
+        "name": "Swing Practice",
+        "description": "Refines technique and improves balance for consistent swings.",
+        "gif_url": "https://tenor.com/view/golf-swing-practice.gif"
+      },
+      {
+        "name": "Putting Drill",
+        "description": "Enhances control and precision on the green.",
+        "gif_url": "https://tenor.com/view/golf-putting-drill.gif"
+      }
+    ],
+      "photo_url": "images/golf.png"
+    },
+    "swimming": {
+      "name": "Swimming",
+      "rules_and_regulations": [
+        "The sport involves racing in pools or open water using different strokes.",
+        "Common strokes include freestyle, breaststroke, backstroke, and butterfly.",
+        "Swimmers must touch the wall at each turn and at the finish.",
+        "In relays, the next swimmer cannot start until the previous swimmer touches the wall.",
+        "False starts lead to disqualification."
+      ],
+      "common_injuries": [
+        {
+          "name": "Swimmer's Shoulder",
+          "symptoms": "Pain, limited shoulder mobility",
+          "causes": "Overuse of shoulder muscles during strokes",
+          "precautions": "Proper technique, strengthen shoulder muscles."
+        },
+        {
+          "name": "Knee Pain",
+          "symptoms": "Pain, stiffness, swelling",
+          "causes": "Repetitive breaststroke kicks",
+          "precautions": "Avoid overuse, strengthen knee muscles."
+        }
+      ],
+      "famous_tournaments": [
+        "Olympic Swimming",
+        "World Aquatics Championships",
+        "FINA World Cup",
+        "European Swimming Championships",
+        "Pan Pacific Swimming Championships"
+      ],
+      "exercises": [
+        {
+          "name": "Freestyle Drill",
+          "description": "Improves stroke efficiency and breathing technique.",
+          "gif_url": "https://tenor.com/view/swimming-freestyle-drill.gif"
+        },
+        {
+          "name": "Kickboard Practice",
+          "description": "Builds leg strength and proper kicking mechanics.",
+          "gif_url": "https://tenor.com/view/swimming-kickboard-practice.gif"
+        }
+      ],
+      "photo_url": "images/swimming.png"
+    },
+    "wrestling": {
+      "name": "Wrestling",
+      "rules_and_regulations": [
+        "The match takes place on a circular mat with specific boundaries.",
+        "The objective is to pin the opponent's shoulders to the mat or score points through takedowns and holds.",
+        "A match consists of two or three periods, each lasting 2-3 minutes.",
+        "Illegal moves include biting, hair pulling, and striking.",
+        "The wrestler with the most points or a pin wins the match."
+      ],
+      "common_injuries": [
+        {
+          "name": "Knee Ligament Tears",
+          "symptoms": "Pain, swelling, instability",
+          "causes": "Sudden twists or holds",
+          "precautions": "Strengthen leg muscles, wear knee braces."
+        },
+        {
+          "name": "Neck Strain",
+          "symptoms": "Pain, stiffness, limited movement",
+          "causes": "Pressure during holds or slams",
+          "precautions": "Neck strengthening exercises, proper technique."
+        }
+      ],
+      "famous_tournaments": [
+        "Olympic Wrestling",
+        "World Wrestling Championships",
+        "Asian Wrestling Championships",
+        "WWE Events",
+        "Commonwealth Games Wrestling"
+      ],
+
+      "exercises": [
+        {
+          "name": "Grappling Drill",
+          "description": "Develops technique for controlling and pinning opponents.",
+          "gif_url": "https://tenor.com/view/wrestling-grappling-drill.gif"
+        },
+        {
+          "name": "Takedown Practice",
+          "description": "Improves speed and precision in executing takedowns.",
+          "gif_url": "https://tenor.com/view/wrestling-takedown-drill.gif"
+        }
+      ],
+      "photo_url": "images/wrestling.jpg"
+    },
+    "cycling": {
+      "name": "Cycling",
+      "rules_and_regulations": [
+        "Cycling races are held on roads, tracks, or mountain trails.",
+        "Riders must stay within their lane or designated path during track events.",
+        "Drafting behind other cyclists is allowed in most races.",
+        "Helmets are mandatory for all participants.",
+        "The winner is the cyclist who finishes in the shortest time or gains the most points."
+      ],
+      "common_injuries": [
+        {
+          "name": "Knee Pain",
+          "symptoms": "Pain, swelling, stiffness",
+          "causes": "Overuse or improper seat positioning",
+          "precautions": "Adjust bike settings, strengthen knee muscles."
+        },
+        {
+          "name": "Wrist and Hand Numbness",
+          "symptoms": "Tingling, pain, numbness",
+          "causes": "Prolonged gripping of handlebars",
+          "precautions": "Wear padded gloves, adjust handlebar height."
+        }
+      ],
+      "famous_tournaments": [
+        "Tour de France",
+        "Giro d'Italia",
+        "Vuelta a España",
+        "UCI World Championships",
+        "Olympic Cycling"
+      ],
+      "exercises": [
+        {
+          "name": "Hill Climb Drill",
+          "description": "Builds endurance and strength for uphill cycling.",
+          "gif_url": "https://media.giphy.com/media/1j8WfEqnLhuWI/giphy.gif"
+        }
+
+      ],
+      "photo_url": "images/cycling.png"
+    }
+  }
+

@@ -1,0 +1,163 @@
+/* *{
+    background-color: #e7c6ff;
+} */
+header {
+  width: 100%;
+  background-color: transparent;
+  /* padding: 10px 20px; */
+  position: fixed;
+  top: 0;
+  background-color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.main{
+  background-color: #e7c6ff;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+
+  padding-top: 10%;
+}
+
+.navbar .logo img {
+  width: 30px; /* Adjust logo size */
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f1c40f; /* Highlight on hover */
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+.hidden {
+    display: none;
+  }
+  
+  #exercise-animation img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .exercise {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  #controls button {
+    margin: 10px;
+  }
+  
+  #timer-tracker {
+    margin-left: 500px;
+    text-align: center; /* Center all content */
+  }
+  
+  .feedback-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .quote-text {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #777;
+    font-style: italic;
+  }
+  
+  #exheading {
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  #exercise-selector {
+    text-align: center;
+  }
+  
+  .Maincontent {
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  #exercise-display {
+    margin-left: 200px;
+    height: 50rem;
+    width: 30rem;
+  }
+  
+  #controls {
+    margin-left: 200px;
+  }
+
+  #timer-tracker{
+    margin-left: 200px;
+  }
+  
+  .timerbuttons{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 0.3rem;
+    background-color: #bbd0ff;
+  }
+
+  #exercise-animation{
+    height: 360px;
+    width: 360px;
+  }
