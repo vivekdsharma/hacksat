@@ -4,6 +4,11 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-image: url(bg1.jfif);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
 }
 header {
     width: 95%;
@@ -77,6 +82,9 @@ header {
 
 .hidden {
     display: none;
+}
+.main{
+  margin-top: 10%;
 }
 
 .visible {

@@ -82,8 +82,8 @@ body {
   h1 {
     text-align: center;
     font-size: 2.5em;
-    color: #4CAF50;
-    margin-top: 20px;
+    color: red;
+    margin-top: 10%;
   }
 
   label {
